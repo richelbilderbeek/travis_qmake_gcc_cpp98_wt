@@ -33,3 +33,4 @@ ui_*
 qrc_*
 travis_qmake_gcc_cpp98_qt
 .nfs*
+travis_qmake_gcc_cpp98_wt
