@@ -1,8 +1,7 @@
-QT       += core
-QT       -= gui
-CONFIG   += console
-CONFIG   -= app_bundle
 TEMPLATE = app
+CONFIG += console
+CONFIG -= app_bundle qt
+QMAKE_CXXFLAGS += -Wall -Wextra -Weffc++ -Werror
 
 LIBS += \
   -lboost_date_time \

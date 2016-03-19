@@ -12,7 +12,10 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * C++ version: `C++98`
  * Libraries: `STL` and `Wt`
  * Code coverage: none
- * Source: QDialog with Qt resource file
+ * Source: `main.cpp`
+
+More complex builds:
+ * C++11: [travis_qmake_gcc_cpp11_wt](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp11_wt)
 
 Less complex builds:
  * STL only: [travis_qmake_gcc_cpp98](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98)

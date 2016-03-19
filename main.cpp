@@ -49,6 +49,8 @@ struct WtDialog : public Wt::WContainerWidget
     this->addWidget(m_widget);
   }
   private:
+  WtDialog(const WtDialog&); //delete
+  WtDialog& operator=(const WtDialog&); //delete
   WtWidget * const m_widget;
 };
 
@@ -62,6 +64,8 @@ struct WtApplication : public Wt::WApplication
     root()->addWidget(m_dialog);
   }
   private:
+  WtApplication(const WtApplication&); //delete
+  WtApplication& operator=(const WtApplication&); //delete
   WtDialog * const m_dialog;
 };
 
