@@ -1,8 +1,12 @@
 language: cpp
+dist: xenial
 compiler: gcc
+
 addons: 
   apt: 
     packages: libboost-all-dev
+
 install: sudo apt-get install witty-dev
+
 script: ./build.sh
 
