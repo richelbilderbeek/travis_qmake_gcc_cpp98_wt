@@ -1,12 +1,13 @@
 language: cpp
-dist: xenial
+dist: bionic
 compiler: gcc
 
-addons: 
-  apt: 
-    packages: libboost-all-dev
-
-install: sudo apt-get install witty-dev
+install: 
+  - sudo apt update -qq
+  # Boost
+  - sudo apt install -qq libboost-all-dev
+  # Wt
+  - sudo apt-get install witty-dev
 
 script: ./build.sh
 
